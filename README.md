@@ -38,3 +38,9 @@ brew install docker-machine
 - Setup & Devops
 	- Proper data container instead of jamming everything in 1 container
 	- Proper data seeding with undefined jsons table namings
+- Testing
+	- Functional Testing
+	- Unit Testing
+	- Snapshot testing
+	- API Testing
+	- 
