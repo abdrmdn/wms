@@ -1,35 +1,51 @@
 # wms
 warehouse management system
 
-## What does this Project contains
+## What does this Project contains / demonstrates:
 - Feature of loading data into DB
 - Migrations of DB with proper shemas
-- 
+- Simple use of MVC
+- Proper many-to-many relationship
+- Dealing with Json files
+- Ability to make server infrastructure (DB, Web) containers using docker
+- Linux administration skillset
+- Testing knowledge including different type of testings
+- Easy setup for developers to use big applications
+- Simple UI and FE skills
 
-
-## What does the container do
-- Runs composer install
-- Runs the laravel start up script
-
+-----
 
 ## Setup 
 ### Requirements
-- Install docker
-brew install docker
-- Install docker-compose
-brew install docker-compose 
-- Install docker deamon
-brew install docker-machine
+- Install docker and docker-compose and run docker daemon
+- JSON Data must be added in `wms/app/database/jsonData/` to be loaded
+	- Otherwise no data will be loaded
 - Run the command
- docker-compose up -d 
-- Visit localhost:8080
+ docker-compose up -d
+- Go to your browser and visit:
+ http://localhost:8080
 
+
+## What does the container do on startup
+- Runs composer install
+- Create the right db schema for the application
+- Load json data into db
+- Runs the laravel start up script
 
 ### How to run tests
 
 - Go inside the container and run
 `php vendor/bin/codecept run --steps`
 
+
+
+### Commands that can be run
+- Test:
+`php vendor/bin/codecept run --steps `
+- Load JSON Data manually
+`php artisan data:load`
+- Run migration to create tables that are needed for the application
+`php artisan migrate`
 
 -----
 
