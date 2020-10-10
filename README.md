@@ -29,6 +29,8 @@ brew install docker-machine
 	- read partials from files for huge files
 	- read all json files and store them based on their table naming
 	- Constraint on pivot table to avoid rep
+	- Authentication
+	- Pass products using resource in future to avoid sending all the data
 - Setup & Devops
 	- Proper data container instead of jamming everything in 1 container
 	- 
