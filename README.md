@@ -1,12 +1,19 @@
 # wms
 warehouse management system
 
+## What does this Project contains
+- Feature of loading data into DB
+- Migrations of DB with proper shemas
+- 
+
 
 ## What does the container do
 - Runs composer install
 - Runs the laravel start up script
 
-## Requirements
+
+## Setup 
+### Requirements
 - Install docker
 brew install docker
 - Install docker-compose
@@ -17,6 +24,14 @@ brew install docker-machine
  docker-compose up -d 
 - Visit localhost:8080
 
+
+### How to run tests
+
+- Go inside the container and run
+`php vendor/bin/codecept run --steps`
+
+
+-----
 
 ## Things to Improve
 

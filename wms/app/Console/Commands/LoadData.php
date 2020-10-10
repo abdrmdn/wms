@@ -41,8 +41,8 @@ class LoadData extends Command
     {
         try {
             //Read from both files and store them in memory
-            $products = json_decode(file_get_contents( __DIR__ . "/../../../../dataFiles/products.json" ), true)['products'];
-            $articles = json_decode(file_get_contents( __DIR__ . "/../../../../dataFiles/inventory.json" ), true)['inventory'];            
+            $products = json_decode(file_get_contents( __DIR__ . "/../../../database/jsonData/products.json" ), true)['products'];
+            $articles = json_decode(file_get_contents( __DIR__ . "/../../../database/jsonData/inventory.json" ), true)['inventory'];            
         } catch (Exception $e) {
             throw new Exception("Something webt wrong while loading the json files", 1);            
         }
