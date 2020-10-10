@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\WareHouseMainController::class, 'index']);
+Route::get('/sell/{producId}', [App\Http\Controllers\WareHouseMainController::class, 'sell']);

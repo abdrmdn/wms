@@ -20,4 +20,14 @@ class WareHouseMainController extends BaseController
     	// Return a view with the products attached
     	return view('main', ['products' => $products]);
     }
+
+    public function sell($productId){
+    	
+    	// Find and delete the product that the user passed
+    	$product = Product::findOrFail($productId);
+    	$product->delete();
+
+    	// Go back to the main page
+    	return redirect('/');
+    }
 }

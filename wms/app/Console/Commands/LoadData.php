@@ -68,8 +68,9 @@ class LoadData extends Command
 
             // Attach the articles from db to this product
             foreach ($product_part['contain_articles'] as $containedArticle) {
+
                 $product->articles()->attach(
-                    Article::find($containedArticle['art_id'])->first(),
+                    Article::where('id',$containedArticle['art_id'])->first(),
                     ['quantity' => $containedArticle['amount_of']]
                 );
             }

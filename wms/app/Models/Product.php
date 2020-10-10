@@ -13,6 +13,11 @@ class Product extends Model
 
     public function articles()
     {
-        return $this->belongsToMany('App\Models\Article');
+        return $this
+        ->belongsToMany('App\Models\Article')
+        ->using('App\Models\ArticleProduct')
+        ->withPivot([
+                    'quantity',
+                ]);
     }
 }

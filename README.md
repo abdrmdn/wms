@@ -24,6 +24,7 @@ brew install docker-machine
 	- Use webpack
 	- Use sass
 	- Use proper FE framework like react
+	- Responsive API Call for deleting/selling
 - BE
 	- Read exact part from DB instead of all json file
 	- read partials from files for huge files
@@ -31,6 +32,9 @@ brew install docker-machine
 	- Constraint on pivot table to avoid rep
 	- Authentication
 	- Pass products using resource in future to avoid sending all the data
+	- Proper CSRF for all posts like sell
+	- Pass proper request to Controller
+	- Make the routes more RESTFUL
 - Setup & Devops
 	- Proper data container instead of jamming everything in 1 container
-	- 
+	- Proper data seeding with undefined jsons table namings
