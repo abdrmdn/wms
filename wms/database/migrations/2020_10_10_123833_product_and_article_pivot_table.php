@@ -13,7 +13,8 @@ class ProductAndArticlePivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_articles', function (Blueprint $table) {
+
+        Schema::create('article_product', function (Blueprint $table) {
             $table->integer('product_id')->unsigned();
             $table->string('article_id');
             $table->integer('quantity')->unsigned();
@@ -27,6 +28,6 @@ class ProductAndArticlePivotTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_articles');
+        Schema::dropIfExists('article_product');
     }
 }
