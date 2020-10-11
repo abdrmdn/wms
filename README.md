@@ -49,6 +49,30 @@ warehouse management system
 
 -----
 
+## Main files to look at
+or the ones I remember :
+- app/Console/Commands/LoadData.php
+- database/migrations/2020_10_10_123012_products.php
+
+- app/Http/Kernel.php
+
+- app/Http/Controllers/WareHouseMainController.php
+- app/Models/Product.php
+- app/Observers/ProductObserver.php
+- app/Providers/AppServiceProvider.php
+- resources/views/main.blade.php
+- routes/web.php
+
+- tests/acceptance.suite.yml
+- tests/acceptance/StoreCest.php
+
+- startup.sh
+- ../docker-compose.yml
+- ../Dockerfile
+
+- ....
+-----
+
 ## Things to Improve
 
 - FE
@@ -74,4 +98,5 @@ warehouse management system
 	- Unit Testing
 	- Snapshot testing
 	- API Testing
-	- 
+	- Use of seeders
+	- Proper classes to test
