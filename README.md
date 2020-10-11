@@ -12,7 +12,7 @@ warehouse management system
 - Testing knowledge including different type of testings
 - Easy setup for developers to use big applications
 - Simple UI and FE skills
-- System desing skills
+- System design (architectural and logical design) skills
 
 -----
 
